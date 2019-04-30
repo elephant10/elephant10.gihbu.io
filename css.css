@@ -1,0 +1,89 @@
+h1{
+   
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 32px;
+    color: blue; 
+}
+
+h2{
+
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    color: yellow; 
+}
+
+body{
+    background-image: url("pen.jpg");
+    background-position: 100% ;
+    
+}
+
+#nav{
+    font-family: 'Open Sans', arial;
+
+}
+
+#nav li{
+
+	float:left;
+    position:relative;
+    list-style:none; 
+    width:190px;
+    text-align: left;
+}
+#nav a{
+    text-decoration:none;
+    display:block;
+    padding:35px;
+    
+}
+
+#nav ul {
+	visibility:hidden;
+    padding:0;  
+    position:absolute;
+}
+#nav li:hover > ul{
+    visibility:visible;
+	position: relative;
+}
+
+#nav ul a{
+	padding:18.5px 65px; 
+}
+
+
+.spis{
+    background-image: url("trizub.jpg");
+    font-size: 30px;
+    color:white;
+   text-align:left;
+}
+#ZE{
+    background:#06e911;  
+}
+#ZE :hover {
+    background:white;  
+}
+#Poroshenko{
+    background:#8d084b;  
+}
+
+li  {
+    
+    color:yellow;
+    font-weight: bold;
+}
+main div {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 100;
+    color: red;
+    margin-block-start: 10%
+}
+aside{
+    margin-left: 10%;
+}
+aside:hover ~ main {
+display: none;
+}
