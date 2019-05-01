@@ -4,19 +4,17 @@ h1{
 }
 h2{
     text-align: center;
-    color: blue;
+    color: red;
 }
 h3{
 font-size: 30px;
-color:green; 
+color:blue; 
 font-family: cursive;
 }
 table{
-  font-family: 'Courier New', Courier, monospace;
-  color: blueviolet;
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(58, 4, 206);
 }
 body{
- 
   background-image: url(images.jpg);
 }
- 
