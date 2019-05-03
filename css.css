@@ -14,13 +14,13 @@ h2{
 
 body{
     background-image: url("pen.jpg");
-    background-position: 100% ;
+    background-position: top left ;
+ 
     
 }
 
 #nav{
     font-family: 'Open Sans', arial;
-
 }
 
 #nav li{
@@ -62,7 +62,9 @@ body{
 #ZE{
     background:#06e911;  
 }
-#ZE :hover {
+#ZE:hover,
+#Poroshenko:hover,#ulia:hover,#boy:hover,#gri:hover,#sme:hover,#lia:hover,#vilk:hover,
+#cos:hover,#tim:hover,#she:hover,#nal:hover,#bog:hover,#sad:hover,#gnap:hover,#mur:hover,#cri:hover,#dob:hover{
     background:white;  
 }
 #Poroshenko{
@@ -86,4 +88,9 @@ aside{
 }
 aside:hover ~ main {
 display: none;
+}
+footer{
+    text-align: center;
+    color: rgba(125, 6, 194, 0.651);
+    font-size:300%;
 }
