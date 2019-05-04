@@ -3,23 +3,18 @@ h1{
     font-family: 'Courier New', Courier, monospace;
     font-size: 32px;
     color: blue; 
+    font-weight: bolder;
 }
 
-h2{
-
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 40px;
-    color: yellow; 
-}
 
 body{
     background-image: url("pen.jpg");
     background-position: top left ;
- 
-    
 }
 
 #nav{
+   
+    box-align:center;
     font-family: 'Open Sans', arial;
 }
 
@@ -31,7 +26,11 @@ body{
     width:190px;
     text-align: left;
 }
-#nav a{
+#nav > li > a{
+    background: blue;
+}
+#nav  a{
+    color: yellow;
     text-decoration:none;
     display:block;
     padding:35px;
@@ -39,13 +38,16 @@ body{
 }
 
 #nav ul {
-	visibility:hidden;
+    display: none;
+	opacity: 0;;
     padding:0;  
     position:absolute;
 }
 #nav li:hover > ul{
-    visibility:visible;
-	position: relative;
+   display: block;
+    opacity: 1;
+    position: absolute;
+    transition-duration: 500ms;
 }
 
 #nav ul a{
@@ -54,22 +56,24 @@ body{
 
 
 .spis{
-    background-image: url("trizub.jpg");
+   /* background-image: url("trizub.jpg");*/
     font-size: 30px;
     color:white;
    text-align:left;
 }
-#ZE{
-    background:#06e911;  
+#nav li ul li a{
+color: blue;
+}
+#ZE,#Poroshenko,#ulia,#boy,#gri,#sme,#lia,#vilk,#cos,#tim,#she,#nal,#bog,#sad,#gnap,#mur,#cri,#dob{
+    background:rgb(222, 238, 4);  
 }
 #ZE:hover,
 #Poroshenko:hover,#ulia:hover,#boy:hover,#gri:hover,#sme:hover,#lia:hover,#vilk:hover,
 #cos:hover,#tim:hover,#she:hover,#nal:hover,#bog:hover,#sad:hover,#gnap:hover,#mur:hover,#cri:hover,#dob:hover{
-    background:white;  
+    background: rgba(222, 238, 4,0.7);  
+    transition-duration: 500ms;
 }
-#Poroshenko{
-    background:#8d084b;  
-}
+
 
 li  {
     
@@ -84,13 +88,14 @@ main div {
     margin-block-start: 10%
 }
 aside{
+    
     margin-left: 10%;
 }
-aside:hover ~ main {
-display: none;
-}
 footer{
+   
+    display: inline;
+    margin-left:10%; 
     text-align: center;
-    color: rgba(125, 6, 194, 0.651);
-    font-size:300%;
+    color: rgba(51, 7, 209, 0.747);
+    font-size:200%;
 }
